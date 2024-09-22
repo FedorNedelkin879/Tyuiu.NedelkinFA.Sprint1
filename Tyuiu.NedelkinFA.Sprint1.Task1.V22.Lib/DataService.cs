@@ -6,7 +6,7 @@ namespace Tyuiu.NedelkinFA.Sprint1.Task1.V22.Lib
     {
         public double Calculate(double x, double y)
         {
-            return (5 + x) / (y * x); 
+            return x / (1 - y); 
         }
     }
 }

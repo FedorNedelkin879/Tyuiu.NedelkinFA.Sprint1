@@ -12,7 +12,7 @@ namespace Tyuiu.NedelkinFA.Sprint1.Task1.V22.Test
             double x = 1.0;
             double y = 2.0;
             var res = ds.Calculate(x, y);
-            Assert.AreEqual(3, res);
+            Assert.AreEqual(-1, res);
         }
     }
 }
