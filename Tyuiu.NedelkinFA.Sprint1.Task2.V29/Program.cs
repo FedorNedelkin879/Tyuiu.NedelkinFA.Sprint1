@@ -26,6 +26,6 @@ Console.WriteLine("*************************************************************
 Console.WriteLine("* РЕЗУЛЬТАТ:                                                                                   *");
 Console.WriteLine("************************************************************************************************");
 
-Console.WriteLine("Число в секундах в часах будет: "+ ds.ConvertSecondsToHours(x));
+Console.WriteLine("Число в секундах в час "+ ds.ConvertSecondsToHours(x));
 
 Console.ReadKey();

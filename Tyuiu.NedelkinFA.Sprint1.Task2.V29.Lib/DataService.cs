@@ -6,7 +6,7 @@ namespace Tyuiu.NedelkinFA.Sprint1.Task2.V29.Lib
     {
         public int ConvertSecondsToHours(int value)
         {
-            return value / 3600;
+            return value / 60;
         }
     }
 }
