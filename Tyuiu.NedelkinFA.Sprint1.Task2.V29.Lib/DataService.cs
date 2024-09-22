@@ -2,8 +2,11 @@
 
 namespace Tyuiu.NedelkinFA.Sprint1.Task2.V29.Lib
 {
-    public class DataService
+    public class DataService : ISprint1Task2V29
     {
-
+        public int ConvertSecondsToHours(int value)
+        {
+            return value / 3600;
+        }
     }
 }
