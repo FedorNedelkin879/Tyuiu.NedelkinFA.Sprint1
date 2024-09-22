@@ -1,34 +1,27 @@
-﻿using Tyuiu.NedelkinFA.Sprint1.Task1.V022.Lib;
+﻿using Tyuiu.NedelkinFA.Sprint1.Task2.V29.Lib;
 DataService ds = new DataService();
 
 Console.Title = "Спринт #1 | Выполнил: Неделькин Ф. А. | ИИПБ-24-1";
 Console.WriteLine("************************************************************************************************");
 Console.WriteLine("* Спринт #1                                                                                    *");
 Console.WriteLine("* Тема: Базовые навыки работы в C#                                                             *");
-Console.WriteLine("* Задание #1                                                                                   *");
-Console.WriteLine("* Вариант #22                                                                                  *");
+Console.WriteLine("* Задание #0                                                                                   *");
+Console.WriteLine("* Вариант #28                                                                                  *");
 Console.WriteLine("* Выполнил: Неделькин Ф. А. | ИИПБ-24-1                                                        *");
 Console.WriteLine("************************************************************************************************");
 Console.WriteLine("* УСЛОВИЕ:                                                                                     *");
-Console.WriteLine("* Написать программу, которая запрашивает у пользователя исходные данные,                      *");
-Console.WriteLine("* вычисляет результат по формуле (5+x)/(y*x) и печатает его на экране.                         *");
+Console.WriteLine("* Написать программу, которая вычисляет выражение 48/12-48/6/4                                 *");
+Console.WriteLine("* и печатает результат на экране.                                                              *");
 Console.WriteLine("*                                                                                              *");
 Console.WriteLine("************************************************************************************************");
 Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                                             *");
 Console.WriteLine("************************************************************************************************");
-
-double x, y;
-
-Console.WriteLine("Введите значение X:");
-x = Convert.ToDouble(Console.ReadLine());
-
-Console.WriteLine("Введите значение Y:");
-y = Convert.ToDouble(Console.ReadLine());
-
+Console.WriteLine("* 48/12-48/6/4                                                                                 *");
 Console.WriteLine("************************************************************************************************");
 Console.WriteLine("* РЕЗУЛЬТАТ:                                                                                   *");
 Console.WriteLine("************************************************************************************************");
 
-Console.WriteLine(ds.Calculate(x, y));
+Console.WriteLine(ds.Calculate());
 
-Console.ReadKey();
+Console.ReadLine();
+
