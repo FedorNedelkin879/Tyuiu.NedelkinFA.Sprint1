@@ -7,11 +7,23 @@ namespace Tyuiu.NedelkinFA.Sprint1.Task6.V9.Lib
         public string MoveLetterToStart(string value)
         {
             if (string.IsNullOrEmpty(value))
-                return value; // Возвращаем пустую строку, если слово пустое
+                return value; // Возвращаем пустую строку, если значение пустое
 
-            char lastChar = value[value.Length - 1]; // Получаем последнюю букву
-            string newWord = lastChar + value.Substring(0, value.Length - 1); // Переносим ее в начало
-            return newWord;
+            // Разделяем текст на слова
+            string[] words = value.Split(new char[] { ' ', '.', ',', '!', '?' }, StringSplitOptions.RemoveEmptyEntries);
+            string result = "";
+
+            foreach (var word in words)
+            {
+                if (word.Length > 0)
+                {
+                    char lastChar = word[word.Length - 1]; // Получаем последнюю букву
+                    string newWord = lastChar + word.Substring(0, word.Length - 1); // Переносим ее в начало
+                    result += newWord + " "; // Добавляем новое слово к результату
+                }
+            }
+
+            return result.Trim(); // Убираем лишний пробел в конце
         }
     }
 }
