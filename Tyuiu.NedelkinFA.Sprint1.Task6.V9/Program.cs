@@ -11,7 +11,6 @@ namespace WordTransformer
             Console.WriteLine("Введите текст:");
             string input = Console.ReadLine();
 
-            // Разделяем текст на слова
             string[] words = input.Split(new char[] { ' ', '.', ',', '!', '?' }, StringSplitOptions.RemoveEmptyEntries);
             string result = "";
 
@@ -19,7 +18,6 @@ namespace WordTransformer
             {
                 if (word.Length > 0)
                 {
-                    // Переносим последнюю букву в начало слова
                     char lastChar = word[word.Length - 1];
                     string newWord = lastChar + word.Substring(0, word.Length - 1);
                     result += newWord + " ";
