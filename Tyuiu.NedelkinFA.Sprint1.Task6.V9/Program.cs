@@ -9,20 +9,8 @@ namespace WordTransformer
         static void Main(string[] args)
         {
             Console.WriteLine("Введите текст:");
-            string input = Console.ReadLine();
-
-            string[] words = input.Split(new char[] { ' ', '.', ',', '!', '?' }, StringSplitOptions.RemoveEmptyEntries);
-            string result = "";
-
-            foreach (var word in words)
-            {
-                if (word.Length > 0)
-                {
-                    char lastChar = word[word.Length - 1];
-                    string newWord = lastChar + word.Substring(0, word.Length - 1);
-                    result += newWord + " ";
-                }
-            }
+            string result = string.Join(" ", Array.ConvertAll(Console.ReadLine().Split(' '),
+                word => word.Length > 0 ? word[^1] + word[..^1] : ""));
 
             Console.WriteLine("Результат:");
             Console.WriteLine(result.Trim());
