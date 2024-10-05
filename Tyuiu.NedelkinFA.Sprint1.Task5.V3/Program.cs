@@ -6,19 +6,14 @@ namespace ThirdDigitFromEnd
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Введите положительное целое число:");
+            Console.WriteLine("Введитe целое число:");
             int k = Convert.ToInt32(Console.ReadLine());
-
             int h = GetThirdDigitFromEnd(k);
-
             if (h != -1)
             {
-                Console.WriteLine($"Третья от конца цифра числа {k} равна {h}.");
+                Console.WriteLine($"Третья c конца цифра - {h}.");
             }
-            else
-            {
-                Console.WriteLine("Число содержит менее трех цифр.");
-            }
+         
         }
 
         static int GetThirdDigitFromEnd(int number)
